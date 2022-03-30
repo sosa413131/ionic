@@ -1,7 +1,9 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import Card from '../components/card';
+import Card from '../components/Card';
+import Badge from '../components/Badge';
+import Alert from '../components/Alert'
 import './Tab1.css';
+
 
 const Tab1: React.FC = () => {
   return (
@@ -18,6 +20,9 @@ const Tab1: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <Card subtitle='Subtitle Here' title='Title Here' content='Content Here' />
+        <Badge/>
+        <Alert/>
+        <img src="./assets/img.jpg" alt="me in yosemite"/>
       </IonContent>
     </IonPage>
   );
